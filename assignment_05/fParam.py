@@ -3,83 +3,45 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "e2d77089",
+   "id": "74682a7a",
    "metadata": {},
    "outputs": [],
    "source": [
-    "import numpy as np"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 2,
-   "id": "b8be2ec3",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "####fParam.py###"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 17,
-   "id": "b70b9c3a",
-   "metadata": {},
-   "outputs": [],
-   "source": [
+    "import numpy as np\n",
+    "####fParam.py###\n",
     "def myf_sys_param():\n",
-    "    \n",
+    "\n",
     "    ###Function###\n",
-    "    \n",
+    "\n",
     "    sys_param = {}\n",
-    "    \n",
+    "\n",
     "    sys_param[\"Nant\"] = 4 #Multiple Tx or Rx antenna : 2,4\n",
-    "    \n",
+    "\n",
     "    sys_param[\"Es\"] = 1 # Average transmit energy [Joule]\n",
-    "    \n",
+    "\n",
     "    sys_param[\"EsoverNO_dB\"] = 5 # Es/NO[dB]\n",
-    "    \n",
+    "\n",
     "    sys_param[\"EsoverNO\"] = 10**(sys_param[\"EsoverNO_dB\"]/ 10) #[no unit]\n",
-    "    \n",
+    "\n",
     "    sys_param[\"NO\"] = sys_param[\"Es\"]/sys_param[\"EsoverNO\"]#Noise energy [Joule]\n",
-    "    \n",
+    "\n",
     "    sys_param[\"constellation_type\"] == \"QPSK\" #constellation type: \"Bpsk\" / \"QPSK\"\n",
-    "    \n",
+    "\n",
     "    if (sys_param[\"constellation_type\"] == \"BPSK\"): #constellation size\n",
-    "        \n",
+    "\n",
     "        sys_param[\"constellation_size\"] =2\n",
-    "        \n",
+    "\n",
     "    elif(sys_param[\"constellation_type\"] == \"QPSK\"):\n",
-    "        \n",
+    "\n",
     "        sys_param[\"constellation_size\"] = 4\n",
-    "        \n",
-    "    return(sys_param)\n",
     "\n",
-    "\n",
-    " \n",
-    "        \n"
+    "    return(sys_param)"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "0245127e",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "2faffe9f",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d478fba4",
+   "id": "78e6ada7",
    "metadata": {},
    "outputs": [],
    "source": []
